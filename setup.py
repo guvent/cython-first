@@ -1,11 +1,7 @@
 from distutils.core import setup
 from Cython.Build import cythonize
 
-setup(ext_modules=cythonize('run.pyx'))
+setup(name='Hello world app',
+      ext_modules=cythonize("hello.pyx"))
 
-"""
-python setup.py build_ext --inplace
-
-python -a run.pyx
-
-"""
+# python setup.py build_ext --inplace
